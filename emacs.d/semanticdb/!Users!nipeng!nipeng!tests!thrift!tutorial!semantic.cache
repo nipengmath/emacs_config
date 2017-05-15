@@ -1,0 +1,75 @@
+;; Object tutorial/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tutorial/"
+  :tables (list 
+   (semanticdb-table "PythonServer.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 40])
+            ("sys" code nil nil [41 66])
+            ("tutorial" include nil nil [131 162])
+            ("tutorial.ttypes" include nil nil [163 192])
+            ("shared.ttypes" include nil nil [194 232])
+            ("thrift.transport" include nil nil [234 270])
+            ("thrift.transport" include nil nil [271 310])
+            ("thrift.protocol" include nil nil [311 354])
+            ("thrift.server" include nil nil [355 388])
+            ("CalculatorHandler" type
+               (:members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [430 434]))                      ) (reparse-symbol indented_block_body) [417 455])
+                    ("ping" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [467 471]))                      ) (reparse-symbol indented_block_body) [458 493])
+                    ("add" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [504 508])
+                        ("n1" variable nil (reparse-symbol function_parameters) [510 512])
+                        ("n2" variable nil (reparse-symbol function_parameters) [514 516]))                      ) (reparse-symbol indented_block_body) [496 570])
+                    ("calculate" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [587 591])
+                        ("logid" variable nil (reparse-symbol function_parameters) [593 598])
+                        ("work" variable nil (reparse-symbol function_parameters) [600 604]))                      ) (reparse-symbol indented_block_body) [573 1302])
+                    ("getStruct" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1319 1323])
+                        ("key" variable nil (reparse-symbol function_parameters) [1325 1328]))                      ) (reparse-symbol indented_block_body) [1305 1390])
+                    ("zip" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1401 1405]))                      ) (reparse-symbol indented_block_body) [1393 1426]))                  
+                :type "class")
+                nil [390 1426])
+            ("handler" variable nil nil [1427 1456])
+            ("processor" variable nil nil [1457 1498])
+            ("transport" variable nil nil [1499 1543])
+            ("tfactory" variable nil nil [1544 1593])
+            ("pfactory" variable nil nil [1594 1645])
+            ("server" variable nil nil [1647 1719])
+            ("print" code nil nil [1931 1961])
+            ("server" code nil nil [1962 1976])
+            ("print" code nil nil [1977 1990]))          
+    :file "PythonServer.py"
+    :pointmax 2775
+    :fsize 1990
+    :lastmodtime '(21273 28736)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PythonClient.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [24 40])
+            ("sys" code nil nil [41 66])
+            ("tutorial" include nil nil [68 99])
+            ("tutorial.ttypes" include nil nil [100 129])
+            ("thrift" include nil nil [131 156])
+            ("thrift.transport" include nil nil [157 193])
+            ("thrift.transport" include nil nil [194 233])
+            ("thrift.protocol" include nil nil [234 277])
+            ("try" code nil nil [279 1279]))          
+    :file "PythonClient.py"
+    :pointmax 2128
+    :fsize 1278
+    :lastmodtime '(21273 28897)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nipeng!nipeng!tests!thrift!tutorial!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

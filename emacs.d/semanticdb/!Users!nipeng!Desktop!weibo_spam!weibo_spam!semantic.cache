@@ -1,0 +1,72 @@
+;; Object weibo_spam/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "weibo_spam/"
+  :tables (list 
+   (semanticdb-table "weibo_spam.py"
+    :major-mode 'python-mode
+    :tags 
+        '( (""""
+僵尸粉判别模型
+选取8个特征，构造特征向量，训练数据，生成训练模型。由训练好的模型进行预测。
+"""" code nil nil [47 101])
+            ("__future__" include nil nil [103 134])
+            ("datetime" include nil nil [135 150])
+            ("codecs" include nil nil [151 164])
+            ("save_spam_data_to_mongo" include nil nil [213 243])
+            ("svm_predict_main" include nil nil [256 279])
+            ("RET_STR" include nil nil [294 308])
+            ("USERDATA_COLNAME" include nil nil [322 345])
+            ("VECTOR_NUM" include nil nil [359 376])
+            ("MIN_NUM" include nil nil [390 404])
+            ("WEIRD_LIST" include nil nil [418 435])
+            ("DATETIME_STR" include nil nil [449 468])
+            ("THDTIME" include nil nil [482 496])
+            ("NEED_TAGS" include nil nil [510 526])
+            ("SPAM_FOL_COUNT" include nil nil [540 561])
+            ("SPAM_STA_COUNT" include nil nil [575 596])
+            ("HUMAN_FOL_COUNT" include nil nil [610 632])
+            ("HUMAN_FRID_COUNT" include nil nil [646 669])
+            ("BI_RAT" include nil nil [683 696])
+            ("REPO_RAT" include nil nil [710 725])
+            ("COMM_RAT" include nil nil [739 754])
+            ("AVG_HUMAN_LIST" include nil nil [768 789])
+            ("AVG_SPAM_LIST" include nil nil [803 823])
+            ("cal_time_ratio" function (:arguments 
+              ( ("time_list" variable nil (reparse-symbol function_parameters) [845 854])
+                ("threshold" variable nil (reparse-symbol function_parameters) [856 865]))              ) nil [826 1284])
+            ("simple_pre_spam" function (:arguments 
+              ( ("mydb" variable nil (reparse-symbol function_parameters) [1306 1310])
+                ("colname" variable nil (reparse-symbol function_parameters) [1312 1319])
+                ("uid" variable nil (reparse-symbol function_parameters) [1321 1324])
+                ("threshold" variable nil (reparse-symbol function_parameters) [1326 1335])
+                ("need_tags" variable nil (reparse-symbol function_parameters) [1337 1346]))              ) nil [1286 2612])
+            ("pre_spam" function (:arguments 
+              ( ("mydb" variable nil (reparse-symbol function_parameters) [2627 2631])
+                ("colname" variable nil (reparse-symbol function_parameters) [2633 2640])
+                ("uid" variable nil (reparse-symbol function_parameters) [2642 2645])
+                ("threshold" variable nil (reparse-symbol function_parameters) [2647 2656])
+                ("need_tags" variable nil (reparse-symbol function_parameters) [2666 2675]))              ) nil [2614 3399])
+            ("get_svm_vector" function (:arguments 
+              ( ("user_info" variable nil (reparse-symbol function_parameters) [3420 3429])
+                ("threshold" variable nil (reparse-symbol function_parameters) [3431 3440]))              ) nil [3401 4520])
+            ("is_low_spam" function (:arguments 
+              ( ("u_dict" variable nil (reparse-symbol function_parameters) [4538 4544]))              ) nil [4522 4737])
+            ("is_human" function (:arguments 
+              ( ("user_data" variable nil (reparse-symbol function_parameters) [4752 4761]))              ) nil [4739 5484])
+            ("save_svm_file" function (:arguments 
+              ( ("mycol" variable nil (reparse-symbol function_parameters) [5504 5509])
+                ("cate_uid_list" variable nil (reparse-symbol function_parameters) [5511 5524])
+                ("filename" variable nil (reparse-symbol function_parameters) [5526 5534]))              ) nil [5486 6440])
+            ("get_spam_reason" function (:arguments 
+              ( ("vector" variable nil (reparse-symbol function_parameters) [6462 6468]))              ) nil [6442 6851]))          
+    :file "weibo_spam.py"
+    :pointmax 6851
+    :fsize 7604
+    :lastmodtime '(21278 55958)
+    :unmatched-syntax '((INDENT_BLOCK 5712 . 6440) (NEWLINE 5711 . 5712) (COLON 5710 . 5711) (NAME 5674 . 5678) (NAME 5679 . 5685) (AS 5706 . 5708) (NAME 3282 . 3292) (IF 3355 . 3357) (ELSE 3367 . 3371) (NAME 3171 . 3181) (IF 3241 . 3243) (ELSE 3253 . 3257) (FROM 790 . 794) (PERIOD 795 . 796) (FROM 755 . 759) (PERIOD 760 . 761) (FROM 726 . 730) (PERIOD 731 . 732) (FROM 697 . 701) (PERIOD 702 . 703) (FROM 670 . 674) (PERIOD 675 . 676) (FROM 633 . 637) (PERIOD 638 . 639) (FROM 597 . 601) (PERIOD 602 . 603) (FROM 562 . 566) (PERIOD 567 . 568) (FROM 527 . 531) (PERIOD 532 . 533) (FROM 497 . 501) (PERIOD 502 . 503) (FROM 469 . 473) (PERIOD 474 . 475) (FROM 436 . 440) (PERIOD 441 . 442) (FROM 405 . 409) (PERIOD 410 . 411) (FROM 377 . 381) (PERIOD 382 . 383) (FROM 346 . 350) (PERIOD 351 . 352) (FROM 309 . 313) (PERIOD 314 . 315) (FROM 281 . 285) (PERIOD 286 . 287) (FROM 244 . 248) (PERIOD 249 . 250) (FROM 166 . 170) (PERIOD 171 . 172))
+    )
+   )
+  :file "!Users!nipeng!Desktop!weibo_spam!weibo_spam!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

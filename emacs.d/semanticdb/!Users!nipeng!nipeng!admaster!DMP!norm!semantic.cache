@@ -1,0 +1,35 @@
+;; Object norm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "norm/"
+  :tables (list 
+   (semanticdb-table "test_norm.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("unittest" include nil nil [26 41])
+            ("codecs" include nil nil [42 55])
+            ("json" include nil nil [56 67])
+            ("normalization" include nil nil [69 108])
+            ("load_json" function (:arguments 
+              ( ("fname" variable nil (reparse-symbol function_parameters) [125 130]))              ) nil [111 195])
+            ("test_norm" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("setUp" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [247 251]))                      ) (reparse-symbol indented_block_body) [237 464])
+                    ("test_car_norm" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [487 491]))                      ) (reparse-symbol indented_block_body) [469 730])
+                    ("test_female_norm" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [756 760]))                      ) (reparse-symbol indented_block_body) [735 952]))                  
+                :type "class")
+                nil [197 952]))          
+    :file "test_norm.py"
+    :pointmax 952
+    :fsize 979
+    :lastmodtime '(21194 28533)
+    :unmatched-syntax '((INDENT_BLOCK 167 . 195) (NEWLINE 166 . 167) (COLON 165 . 166) (NAME 137 . 141) (NAME 142 . 148) (AS 161 . 163))
+    )
+   )
+  :file "!Users!nipeng!nipeng!admaster!DMP!norm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

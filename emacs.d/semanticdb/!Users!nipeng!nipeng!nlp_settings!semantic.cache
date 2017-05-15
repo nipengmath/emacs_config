@@ -1,0 +1,47 @@
+;; Object nlp_settings/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nlp_settings/"
+  :tables (list 
+   (semanticdb-table "deploy_weibo_cate_settings.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("socket" include nil nil [27 40])
+            ("machine_hostname" variable nil nil [41 74])
+            ("if" code nil nil [75 190])
+            ("datetime" include nil nil [191 206])
+            ("MONGO_HOST" variable nil nil [216 243])
+            ("MONGO_PORT" variable nil nil [244 262])
+            ("MONGO_DBNAME" variable nil nil [263 296])
+            ("USERDATA_COLNAME" variable nil nil [305 334])
+            ("RET_STR" variable nil nil [347 364])
+            ("WEIRD_LIST" variable nil nil [373 396])
+            ("DATETIME_STR" variable nil nil [405 448])
+            ("THDTIME" variable nil nil [473 509])
+            ("MIN_NUM" variable nil nil [547 564])
+            ("VECTOR_NUM" variable nil nil [575 589])
+            ("SPAM_FOL_COUNT" variable nil nil [612 631])
+            ("SPAM_STA_COUNT" variable nil nil [639 659])
+            ("HUMAN_FOL_COUNT" variable nil nil [680 702])
+            ("HUMAN_FRID_COUNT" variable nil nil [709 730])
+            ("BI_RAT" variable nil nil [739 751])
+            ("REPO_RAT" variable nil nil [759 773])
+            ("COMM_RAT" variable nil nil [781 795])
+            ("NEED_TAGS" variable nil nil [806 822])
+            ("AVG_HUMAN_LIST" variable nil nil [835 974])
+            ("AVG_SPAM_LIST" variable nil nil [976 1113])
+            ("SVM_SERVER_IP" variable nil nil [1115 1146])
+            ("SVM_SERVER_URI" variable nil nil [1147 1170])
+            ("SPAM_SERVER_IP" variable nil nil [1172 1204])
+            ("SPAM_SERVER_URI" variable nil nil [1205 1230])
+            ("LIMIT_SERVER_SECONDS" variable nil nil [1232 1256]))          
+    :file "deploy_weibo_cate_settings.py"
+    :pointmax 1257
+    :fsize 1550
+    :lastmodtime '(21103 32074)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nipeng!nipeng!nlp_settings!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

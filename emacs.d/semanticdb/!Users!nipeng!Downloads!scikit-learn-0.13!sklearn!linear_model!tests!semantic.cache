@@ -1,0 +1,46 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables (list 
+   (semanticdb-table "test_logistic.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("numpy" include nil nil [1 19])
+            ("scipy.sparse" include nil nil [20 45])
+            ("sklearn.utils.testing" include nil nil [47 99])
+            ("sklearn.utils.testing" include nil nil [100 159])
+            ("sklearn.utils.testing" include nil nil [160 206])
+            ("sklearn.utils.testing" include nil nil [207 254])
+            ("sklearn.utils.testing" include nil nil [255 295])
+            ("sklearn.utils.testing" include nil nil [296 344])
+            ("sklearn.linear_model" include nil nil [346 387])
+            ("sklearn" include nil nil [388 416])
+            ("X" variable nil nil [418 447])
+            ("X_sp" variable nil nil [448 471])
+            ("Y1" variable nil nil [472 486])
+            ("Y2" variable nil nil [487 501])
+            ("iris" variable nil nil [502 529])
+            ("check_predictions" function (:arguments 
+              ( ("clf" variable nil (reparse-symbol function_parameters) [554 557])
+                ("X" variable nil (reparse-symbol function_parameters) [559 560])
+                ("y" variable nil (reparse-symbol function_parameters) [562 563]))              ) nil [532 1130])
+            ("test_predict_2_classes" function nil nil [1132 1749])
+            ("test_error" function nil nil [1751 1896])
+            ("test_predict_3_classes" function nil nil [1898 2059])
+            ("test_predict_iris" function nil nil [2061 2686])
+            ("test_inconsistent_input" function nil nil [2688 3194])
+            ("test_write_parameters" function nil nil [3196 3541])
+            ("raises" code nil nil [3544 3562])
+            ("test_nan" function nil nil [3563 3808])
+            ("test_liblinear_random_state" function nil nil [3810 4095]))          
+    :file "test_logistic.py"
+    :pointmax 4095
+    :fsize 4094
+    :lastmodtime '(20733 45722)
+    :unmatched-syntax '((punctuation 3543 . 3544))
+    )
+   )
+  :file "!Users!nipeng!Downloads!scikit-learn-0.13!sklearn!linear_model!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

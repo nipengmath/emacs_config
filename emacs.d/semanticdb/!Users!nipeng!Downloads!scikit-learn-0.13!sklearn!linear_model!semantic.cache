@@ -1,0 +1,229 @@
+;; Object linear_model/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "linear_model/"
+  :tables (list 
+   (semanticdb-table "__init__.py"
+    :major-mode 'python-mode
+    :tags 
+        '( (""""
+The :mod:`sklearn.linear_model` module implements genelarized linear models. It
+includes Ridge regression, Bayesian Regression, Lasso and Elastic Net
+estimators computed with Least Angle Regression and coordinate descent. It also
+implements Stochastic Gradient Descent related algorithms.
+"""" code nil nil [1 297])
+            ("LinearRegression" include nil nil [468 491])
+            ("BayesianRidge" include nil nil [505 540])
+            ("" code nil nil [566 654])
+            ("" code nil nil [687 855])
+            ("Hinge" include nil nil [871 923])
+            ("SGDClassifier" include nil nil [950 984])
+            ("" code nil nil [1004 1094])
+            ("LogisticRegression" include nil nil [1110 1135])
+            ("orthogonal_mp" include nil nil [1146 1213])
+            ("PassiveAggressiveClassifier" include nil nil [1239 1273])
+            ("PassiveAggressiveRegressor" include nil nil [1299 1332])
+            ("Perceptron" include nil nil [1350 1367])
+            ("" code nil nil [1395 1492])
+            ("__all__" variable nil nil [1494 2578]))          
+    :file "__init__.py"
+    :pointmax 2579
+    :fsize 2578
+    :lastmodtime '(20733 45722)
+    :unmatched-syntax '((FROM 1368 . 1372) (PERIOD 1373 . 1374) (FROM 1333 . 1337) (PERIOD 1338 . 1339) (FROM 1274 . 1278) (PERIOD 1279 . 1280) (FROM 1214 . 1218) (PERIOD 1219 . 1220) (FROM 1136 . 1140) (PERIOD 1141 . 1142) (FROM 1095 . 1099) (PERIOD 1100 . 1101) (FROM 985 . 989) (PERIOD 990 . 991) (FROM 924 . 928) (PERIOD 929 . 930) (FROM 856 . 860) (PERIOD 861 . 862) (FROM 655 . 659) (PERIOD 660 . 661) (FROM 541 . 545) (PERIOD 546 . 547) (FROM 493 . 497) (PERIOD 498 . 499) (FROM 457 . 461) (PERIOD 462 . 463))
+    )
+   (semanticdb-table "passive_aggressive.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("BaseSGDClassifier" include nil nil [89 113])
+            ("BaseSGDRegressor" include nil nil [140 163])
+            ("DEFAULT_EPSILON" include nil nil [190 212])
+            ("PassiveAggressiveClassifier" type
+               (:superclasses ("BaseSGDClassifier")
+                :members 
+                  ( (""""Passive Aggressive Classifier
+
+    Parameters
+    ----------
+
+    C : float
+        Maximum step size (regularization). Defaults to 1.0.
+
+    fit_intercept: bool
+        Whether the intercept should be estimated or not. If False, the
+        data is assumed to be already centered. Defaults to True.
+
+    n_iter: int, optional
+        The number of passes over the training data (aka epochs).
+        Defaults to 5.
+
+    shuffle: bool, optional
+        Whether or not the training data should be shuffled after each epoch.
+        Defaults to False.
+
+    random_state: int seed, RandomState instance, or None (default)
+        The seed of the pseudo random number generator to use when
+        shuffling the data.
+
+    verbose: integer, optional
+        The verbosity level
+
+    n_jobs: integer, optional
+        The number of CPUs to use to do the OVA (One Versus All, for
+        multi-class problems) computation. -1 means 'all CPUs'. Defaults
+        to 1.
+
+    loss : string, optional
+        The loss function to be used:
+        hinge: equivalent to PA-I in the reference paper.
+        squared_hinge: equivalent to PA-II in the reference paper.
+
+    warm_start : bool, optional
+        When set to True, reuse the solution of the previous call to fit as
+        initialization, otherwise, just erase the previous solution.
+
+    Attributes
+    ----------
+    `coef_` : array, shape = [1, n_features] if n_classes == 2 else [n_classes,
+    n_features]
+        Weights assigned to the features.
+
+    `intercept_` : array, shape = [1] if n_classes == 2 else [n_classes]
+        Constants in decision function.
+
+    See also
+    --------
+
+    SGDClassifier
+    Perceptron
+
+    References
+    ----------
+    Online Passive-Aggressive Algorithms
+    <http://jmlr.csail.mit.edu/papers/volume7/crammer06a/crammer06a.pdf>
+    K. Crammer, O. Dekel, J. Keshat, S. Shalev-Shwartz, Y. Singer - JMLR (2006)
+
+    """" code nil (reparse-symbol indented_block_body) [273 2184])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [2202 2206])
+                        ("C" variable nil (reparse-symbol function_parameters) [2208 2209])
+                        ("fit_intercept" variable nil (reparse-symbol function_parameters) [2215 2228])
+                        ("n_iter" variable nil (reparse-symbol function_parameters) [2252 2258])
+                        ("shuffle" variable nil (reparse-symbol function_parameters) [2262 2269])
+                        ("verbose" variable nil (reparse-symbol function_parameters) [2277 2284])
+                        ("loss" variable nil (reparse-symbol function_parameters) [2288 2292])
+                        ("n_jobs" variable nil (reparse-symbol function_parameters) [2319 2325])
+                        ("random_state" variable nil (reparse-symbol function_parameters) [2329 2341])
+                        ("warm_start" variable nil (reparse-symbol function_parameters) [2348 2358]))                      ) (reparse-symbol indented_block_body) [2189 2934])
+                    ("partial_fit" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [2955 2959])
+                        ("X" variable nil (reparse-symbol function_parameters) [2961 2962])
+                        ("y" variable nil (reparse-symbol function_parameters) [2964 2965])
+                        ("classes" variable nil (reparse-symbol function_parameters) [2967 2974]))                      ) (reparse-symbol indented_block_body) [2939 4124])
+                    ("fit" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [4137 4141])
+                        ("X" variable nil (reparse-symbol function_parameters) [4143 4144])
+                        ("y" variable nil (reparse-symbol function_parameters) [4146 4147])
+                        ("coef_init" variable nil (reparse-symbol function_parameters) [4149 4158])
+                        ("intercept_init" variable nil (reparse-symbol function_parameters) [4165 4179]))                      ) (reparse-symbol indented_block_body) [4129 5210]))                  
+                :type "class")
+                nil [215 5210])
+            ("PassiveAggressiveRegressor" type
+               (:superclasses ("BaseSGDRegressor")
+                :members 
+                  ( (""""Passive Aggressive Regressor
+
+    Parameters
+    ----------
+
+    C : float
+        Maximum step size (regularization). Defaults to 1.0.
+
+    epsilon: float
+        If the difference between the current prediction and the correct label
+        is below this threshold, the model is not updated.
+
+    fit_intercept: bool
+        Whether the intercept should be estimated or not. If False, the
+        data is assumed to be already centered. Defaults to True.
+
+    n_iter: int, optional
+        The number of passes over the training data (aka epochs).
+        Defaults to 5.
+
+    shuffle: bool, optional
+        Whether or not the training data should be shuffled after each epoch.
+        Defaults to False.
+
+    random_state: int seed, RandomState instance, or None (default)
+        The seed of the pseudo random number generator to use when
+        shuffling the data.
+
+    verbose: integer, optional
+        The verbosity level
+
+    loss : string, optional
+        The loss function to be used:
+        epsilon_insensitive: equivalent to PA-I in the reference paper.
+        squared_epsilon_insensitive: equivalent to PA-II in the reference
+        paper.
+
+    warm_start : bool, optional
+        When set to True, reuse the solution of the previous call to fit as
+        initialization, otherwise, just erase the previous solution.
+
+    Attributes
+    ----------
+    `coef_` : array, shape = [1, n_features] if n_classes == 2 else [n_classes,
+    n_features]
+        Weights assigned to the features.
+
+    `intercept_` : array, shape = [1] if n_classes == 2 else [n_classes]
+        Constants in decision function.
+
+    See also
+    --------
+
+    SGDRegressor
+
+    References
+    ----------
+    Online Passive-Aggressive Algorithms
+    <http://jmlr.csail.mit.edu/papers/volume7/crammer06a/crammer06a.pdf>
+    K. Crammer, O. Dekel, J. Keshat, S. Shalev-Shwartz, Y. Singer - JMLR (2006)
+
+    """" code nil (reparse-symbol indented_block_body) [5268 7169])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [7187 7191])
+                        ("C" variable nil (reparse-symbol function_parameters) [7193 7194])
+                        ("fit_intercept" variable nil (reparse-symbol function_parameters) [7200 7213])
+                        ("n_iter" variable nil (reparse-symbol function_parameters) [7220 7226])
+                        ("shuffle" variable nil (reparse-symbol function_parameters) [7230 7237])
+                        ("verbose" variable nil (reparse-symbol function_parameters) [7262 7269])
+                        ("loss" variable nil (reparse-symbol function_parameters) [7273 7277])
+                        ("epsilon" variable nil (reparse-symbol function_parameters) [7318 7325])
+                        ("random_state" variable nil (reparse-symbol function_parameters) [7343 7355])
+                        ("class_weight" variable nil (reparse-symbol function_parameters) [7362 7374])
+                        ("warm_start" variable nil (reparse-symbol function_parameters) [7398 7408]))                      ) (reparse-symbol indented_block_body) [7174 8022])
+                    ("partial_fit" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [8043 8047])
+                        ("X" variable nil (reparse-symbol function_parameters) [8049 8050])
+                        ("y" variable nil (reparse-symbol function_parameters) [8052 8053]))                      ) (reparse-symbol indented_block_body) [8027 8811])
+                    ("fit" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [8824 8828])
+                        ("X" variable nil (reparse-symbol function_parameters) [8830 8831])
+                        ("y" variable nil (reparse-symbol function_parameters) [8833 8834])
+                        ("coef_init" variable nil (reparse-symbol function_parameters) [8836 8845])
+                        ("intercept_init" variable nil (reparse-symbol function_parameters) [8852 8866]))                      ) (reparse-symbol indented_block_body) [8816 9781]))                  
+                :type "class")
+                nil [5212 9781]))          
+    :file "passive_aggressive.py"
+    :pointmax 9781
+    :fsize 9780
+    :lastmodtime '(20733 45722)
+    :unmatched-syntax '((NAME 9471 . 9473) (IF 9482 . 9484) (ELSE 9520 . 9524) (NAME 8446 . 8448) (IF 8457 . 8459) (ELSE 8495 . 8499) (NAME 4978 . 4980) (IF 4989 . 4991) (ELSE 5013 . 5017) (NAME 3803 . 3805) (IF 3814 . 3816) (ELSE 3838 . 3842) (FROM 164 . 168) (PERIOD 169 . 170) (FROM 114 . 118) (PERIOD 119 . 120) (PERIOD 68 . 69))
+    )
+   )
+  :file "!Users!nipeng!Downloads!scikit-learn-0.13!sklearn!linear_model!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

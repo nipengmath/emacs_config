@@ -1,0 +1,20 @@
+;; Object weibo_spam/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "weibo_spam/"
+  :tables (list 
+   (semanticdb-table "setup.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("setuptools" include nil nil [1 44])
+            ("setup" code nil nil [46 171]))          
+    :file "setup.py"
+    :pointmax 172
+    :fsize 171
+    :lastmodtime '(21278 58909)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nipeng!Desktop!weibo_spam!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

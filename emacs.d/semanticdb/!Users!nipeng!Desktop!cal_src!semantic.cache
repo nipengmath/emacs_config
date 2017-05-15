@@ -1,0 +1,41 @@
+;; Object cal_src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cal_src/"
+  :tables (list 
+   (semanticdb-table "test.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("cal_tf" include nil nil [26 53])
+            ("readability" include nil nil [54 86])
+            ("if" code nil nil [88 370]))          
+    :file "test.py"
+    :pointmax 370
+    :fsize 369
+    :lastmodtime '(21277 14125)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "cal_tf.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("jieba" include nil nil [26 38])
+            ("collections" include nil nil [39 74])
+            ("readability.readability" include nil nil [76 120])
+            ("read" include nil nil [121 147])
+            ("config" include nil nil [148 179])
+            ("get_text" function (:arguments 
+              ( ("src" variable nil (reparse-symbol function_parameters) [195 198]))              ) nil [182 470])
+            ("seg_text" function (:arguments 
+              ( ("text" variable nil (reparse-symbol function_parameters) [485 489]))              ) nil [472 657])
+            ("cal_tf" function (:arguments 
+              ( ("src" variable nil (reparse-symbol function_parameters) [670 673]))              ) nil [659 805]))          
+    :file "cal_tf.py"
+    :pointmax 889
+    :fsize 876
+    :lastmodtime '(21277 14074)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nipeng!Desktop!cal_src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

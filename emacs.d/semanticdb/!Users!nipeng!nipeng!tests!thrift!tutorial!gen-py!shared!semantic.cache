@@ -1,0 +1,121 @@
+;; Object shared/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "shared/"
+  :tables (list 
+   (semanticdb-table "SharedService.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("thrift.Thrift" include nil nil [142 222])
+            ("ttypes" include nil nil [223 243])
+            ("thrift.Thrift" include nil nil [244 280])
+            ("thrift.transport" include nil nil [281 320])
+            ("thrift.protocol" include nil nil [321 375])
+            ("try" code nil nil [376 450])
+            ("Iface" type
+               (:members 
+                  ( ("getStruct" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [481 485])
+                        ("key" variable nil (reparse-symbol function_parameters) [487 490]))                      ) (reparse-symbol indented_block_body) [467 545]))                  
+                :type "class")
+                nil [452 545])
+            ("Client" type
+               (:superclasses ("Iface")
+                :members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [583 587])
+                        ("iprot" variable nil (reparse-symbol function_parameters) [589 594])
+                        ("oprot" variable nil (reparse-symbol function_parameters) [596 601]))                      ) (reparse-symbol indented_block_body) [570 719])
+                    ("getStruct" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [736 740])
+                        ("key" variable nil (reparse-symbol function_parameters) [742 745]))                      ) (reparse-symbol indented_block_body) [722 853])
+                    ("send_getStruct" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [875 879])
+                        ("key" variable nil (reparse-symbol function_parameters) [881 884]))                      ) (reparse-symbol indented_block_body) [856 1105])
+                    ("recv_getStruct" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1127 1131]))                      ) (reparse-symbol indented_block_body) [1108 1607]))                  
+                :type "class")
+                nil [547 1607])
+            ("Processor" type
+               (:superclasses ("Iface" "TProcessor")
+                :members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1660 1664])
+                        ("handler" variable nil (reparse-symbol function_parameters) [1666 1673]))                      ) (reparse-symbol indented_block_body) [1647 1794])
+                    ("process" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1809 1813])
+                        ("iprot" variable nil (reparse-symbol function_parameters) [1815 1820])
+                        ("oprot" variable nil (reparse-symbol function_parameters) [1822 1827]))                      ) (reparse-symbol indented_block_body) [1797 2319])
+                    ("process_getStruct" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [2344 2348])
+                        ("seqid" variable nil (reparse-symbol function_parameters) [2350 2355])
+                        ("iprot" variable nil (reparse-symbol function_parameters) [2357 2362])
+                        ("oprot" variable nil (reparse-symbol function_parameters) [2364 2369]))                      ) (reparse-symbol indented_block_body) [2322 2679]))                  
+                :type "class")
+                nil [1609 2679])
+            ("getStruct_args" type
+               (:members 
+                  ( (""""
+  Attributes:
+   - key
+  """" code nil (reparse-symbol indented_block_body) [2740 2772])
+                    ("thrift_spec" variable nil (reparse-symbol indented_block_body) [2776 2854])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [2871 2875])
+                        ("key" variable nil (reparse-symbol function_parameters) [2877 2880]))                      ) (reparse-symbol indented_block_body) [2858 2908])
+                    ("read" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [2920 2924])
+                        ("iprot" variable nil (reparse-symbol function_parameters) [2926 2931]))                      ) (reparse-symbol indented_block_body) [2911 3582])
+                    ("write" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [3595 3599])
+                        ("oprot" variable nil (reparse-symbol function_parameters) [3601 3606]))                      ) (reparse-symbol indented_block_body) [3585 4080])
+                    ("validate" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [4096 4100]))                      ) (reparse-symbol indented_block_body) [4083 4114])
+                    ("__repr__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [4131 4135]))                      ) (reparse-symbol indented_block_body) [4118 4283])
+                    ("__eq__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [4297 4301])
+                        ("other" variable nil (reparse-symbol function_parameters) [4303 4308]))                      ) (reparse-symbol indented_block_body) [4286 4392])
+                    ("__ne__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [4406 4410])
+                        ("other" variable nil (reparse-symbol function_parameters) [4412 4417]))                      ) (reparse-symbol indented_block_body) [4395 4451]))                  
+                :type "class")
+                nil [2716 4451])
+            ("getStruct_result" type
+               (:members 
+                  ( (""""
+  Attributes:
+   - success
+  """" code nil (reparse-symbol indented_block_body) [4478 4514])
+                    ("thrift_spec" variable nil (reparse-symbol indented_block_body) [4518 4625])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [4642 4646])
+                        ("success" variable nil (reparse-symbol function_parameters) [4648 4655]))                      ) (reparse-symbol indented_block_body) [4629 4691])
+                    ("read" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [4703 4707])
+                        ("iprot" variable nil (reparse-symbol function_parameters) [4709 4714]))                      ) (reparse-symbol indented_block_body) [4694 5405])
+                    ("write" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [5418 5422])
+                        ("oprot" variable nil (reparse-symbol function_parameters) [5424 5429]))                      ) (reparse-symbol indented_block_body) [5408 5917])
+                    ("validate" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [5933 5937]))                      ) (reparse-symbol indented_block_body) [5920 5951])
+                    ("__repr__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [5968 5972]))                      ) (reparse-symbol indented_block_body) [5955 6120])
+                    ("__eq__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [6134 6138])
+                        ("other" variable nil (reparse-symbol function_parameters) [6140 6145]))                      ) (reparse-symbol indented_block_body) [6123 6229])
+                    ("__ne__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [6243 6247])
+                        ("other" variable nil (reparse-symbol function_parameters) [6249 6254]))                      ) (reparse-symbol indented_block_body) [6232 6288]))                  
+                :type "class")
+                nil [4452 6288]))          
+    :file "SharedService.py"
+    :pointmax 6288
+    :fsize 6287
+    :lastmodtime '(21273 27811)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nipeng!nipeng!tests!thrift!tutorial!gen-py!shared!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

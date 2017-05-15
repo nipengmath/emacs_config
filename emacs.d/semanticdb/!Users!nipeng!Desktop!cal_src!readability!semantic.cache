@@ -1,0 +1,152 @@
+;; Object readability/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "readability/"
+  :tables (list 
+   (semanticdb-table "htmls.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("re" include nil nil [1 10])
+            ("logging" include nil nil [11 25])
+            ("collections" include nil nil [26 44])
+            ("lxml.html" include nil nil [46 62])
+            ("lxml.html" include nil nil [63 93])
+            ("lxml.etree" include nil nil [94 126])
+            ("encoding" include nil nil [127 160])
+            ("cleaners" include nil nil [161 216])
+            ("logging" code nil nil [218 261])
+            ("utf8_parser" variable nil nil [263 315])
+            ("build_doc" function (:arguments 
+              ( ("page" variable nil (reparse-symbol function_parameters) [331 335]))              ) nil [317 610])
+            ("js_re" function (:arguments 
+              ( ("src" variable nil (reparse-symbol function_parameters) [621 624])
+                ("pattern" variable nil (reparse-symbol function_parameters) [626 633])
+                ("flags" variable nil (reparse-symbol function_parameters) [635 640])
+                ("repl" variable nil (reparse-symbol function_parameters) [642 646]))              ) nil [611 721])
+            ("normalize_entities" function (:arguments 
+              ( ("cur_title" variable nil (reparse-symbol function_parameters) [746 755]))              ) nil [723 1107])
+            ("norm_title" function (:arguments 
+              ( ("title" variable nil (reparse-symbol function_parameters) [1123 1128]))              ) nil [1108 1186])
+            ("get_title" function (:arguments 
+              ( ("doc" variable nil (reparse-symbol function_parameters) [1201 1204]))              ) nil [1187 1344])
+            ("add_match" function (:arguments 
+              ( ("collection" variable nil (reparse-symbol function_parameters) [1359 1369])
+                ("text" variable nil (reparse-symbol function_parameters) [1371 1375])
+                ("orig" variable nil (reparse-symbol function_parameters) [1377 1381]))              ) nil [1345 1527])
+            ("shorten_title" function (:arguments 
+              ( ("doc" variable nil (reparse-symbol function_parameters) [1546 1549]))              ) nil [1528 3078])
+            ("get_body" function (:arguments 
+              ( ("doc" variable nil (reparse-symbol function_parameters) [3092 3095]))              ) nil [3079 3557])
+            ("remove_ctrl_char" function (:arguments 
+              ( ("origin_str" variable nil (reparse-symbol function_parameters) [3579 3589]))              ) nil [3558 4240]))          
+    :file "htmls.py"
+    :pointmax 4240
+    :fsize 4239
+    :lastmodtime '(21142 56324)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "readability.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("re" include nil nil [37 46])
+            ("sys" include nil nil [47 57])
+            ("copy" include nil nil [58 69])
+            ("logging" include nil nil [70 84])
+            ("datetime" include nil nil [85 100])
+            ("urlparse" include nil nil [101 116])
+            ("collections" include nil nil [117 152])
+            ("lxml.etree" include nil nil [154 185])
+            ("lxml.etree" include nil nil [186 218])
+            ("lxml.html" include nil nil [219 260])
+            ("lxml.html" include nil nil [261 315])
+            ("htmls" include nil nil [317 343])
+            ("htmls" include nil nil [344 371])
+            ("htmls" include nil nil [372 399])
+            ("htmls" include nil nil [400 431])
+            ("encoding" include nil nil [432 465])
+            ("cleaners" include nil nil [466 499])
+            ("cleaners" include nil nil [500 537])
+            ("utils" include nil nil [539 596])
+            ("logging" code nil nil [598 637])
+            ("log" variable nil nil [638 663])
+            ("DIGITAL_REGEX" variable nil nil [665 716])
+            ("AUTOHOME_RE" variable nil nil [717 782])
+            ("CHINA_COM_RE" variable nil nil [783 839])
+            ("CARXOO_RE" variable nil nil [840 901])
+            ("PEOPLE_RE" variable nil nil [902 953])
+            ("CNAUTONEWS_RE" variable nil nil [954 1018])
+            ("TIEBA_RE" variable nil nil [1158 1209])
+            ("DAQI_RE" variable nil nil [1210 1267])
+            ("NO_YEAR_RE" variable nil nil [1268 1334])
+            ("DIGITAL_SUB" variable nil nil [1336 1376])
+            ("PUNCTUATIONS" variable nil nil [1432 1482])
+            ("PAGE_REGEX" variable nil nil [1484 1538])
+            ("FIRST_PAGE_TEXT" variable nil nil [1539 1594])
+            ("REGEXES" variable nil nil [1596 4709])
+            ("BBS_PAGE_BLOCK_LIMIT" variable nil nil [4712 4736])
+            ("BBS_LEVEL_LIMIT" variable nil nil [4737 4757])
+            ("Unparseable" type
+               (:superclasses ("ValueError")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [4794 4798]))                  
+                :type "class")
+                nil [4759 4799])
+            ("describe" function (:arguments 
+              ( ("node" variable nil (reparse-symbol function_parameters) [4814 4818])
+                ("depth" variable nil (reparse-symbol function_parameters) [4820 4825]))              ) nil [4801 5262])
+            ("to_int" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [5275 5276]))              ) nil [5264 5458])
+            ("clean" function (:arguments 
+              ( ("text" variable nil (reparse-symbol function_parameters) [5470 5474]))              ) nil [5460 5585])
+            ("text_length" function (:arguments 
+              ( ("i" variable nil (reparse-symbol function_parameters) [5603 5604]))              ) nil [5587 5782])
+            ("Document" type
+               (:members (("" "" Class to build a etree document out of html\. "" "" code nil (reparse-symbol indented_block_body) [5804 5854]) ("TEXT_LENGTH_THRESHOLD" variable nil (reparse-symbol indented_block_body) #<overlay from 5859 to 5885 in readability.py>) ("RETRY_LENGTH" variable nil (reparse-symbol indented_block_body) #<overlay from 5890 to 5908 in readability.py>) ("MIN_TEXT_LENGTH" variable nil (reparse-symbol indented_block_body) #<overlay from 5913 to 5933 in readability.py>) ("__init__" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 5952 to 5956 in readability.py>) ("html" variable nil (reparse-symbol function_parameters) #<overlay from 5958 to 5962 in readability.py>) ("options" variable nil (reparse-symbol function_parameters) #<overlay from 5964 to 5973 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 5939 to 9506 in readability.py>) ("_html" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 9521 to 9525 in readability.py>) ("force" variable nil (reparse-symbol function_parameters) #<overlay from 9527 to 9532 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 9511 to 9655 in readability.py>) ("property" code nil (reparse-symbol indented_block_body) #<overlay from 9661 to 9669 in readability.py>) ("bbs_comments" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 9691 to 9695 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 9674 to 11454 in readability.py>) ("get_first_page" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 11478 to 11482 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 11459 to 11618 in readability.py>) ("get_other_page" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 11642 to 11646 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 11623 to 12905 in readability.py>) ("get_publish_date" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 12931 to 12935 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 12910 to 15588 in readability.py>) ("get_author" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 15608 to 15612 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 15593 to 17706 in readability.py>) ("get_misc_count" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 17730 to 17734 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 17711 to 21247 in readability.py>) ("_parse" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 21263 to 21267 in readability.py>) ("input" variable nil (reparse-symbol function_parameters) #<overlay from 21269 to 21274 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 21252 to 21563 in readability.py>) ("content" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 21580 to 21584 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 21568 to 21625 in readability.py>) ("title" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 21640 to 21644 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 21630 to 21686 in readability.py>) ("short_title" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 21707 to 21711 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 21691 to 21985 in readability.py>) ("text_content" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 22007 to 22011 in readability.py>) ("bbs" variable nil (reparse-symbol function_parameters) #<overlay from 22013 to 22016 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 21990 to 22389 in readability.py>) ("transform" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 22408 to 22412 in readability.py>) ("html_partial" variable nil (reparse-symbol function_parameters) #<overlay from 22414 to 22426 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 22394 to 24552 in readability.py>) ("get_clean_html" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 24576 to 24580 in readability.py>) ("html" variable nil (reparse-symbol function_parameters) #<overlay from 24582 to 24586 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 24557 to 24638 in readability.py>) ("summary" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 24655 to 24659 in readability.py>) ("html_partial" variable nil (reparse-symbol function_parameters) #<overlay from 24661 to 24673 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 24643 to 24995 in readability.py>) ("get_article" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 25016 to 25020 in readability.py>) ("candidates" variable nil (reparse-symbol function_parameters) #<overlay from 25022 to 25032 in readability.py>) ("best_candidate" variable nil (reparse-symbol function_parameters) #<overlay from 25034 to 25048 in readability.py>) ("html_partial" variable nil (reparse-symbol function_parameters) #<overlay from 25050 to 25062 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 25000 to 27183 in readability.py>) ("select_best_candidate" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 27214 to 27218 in readability.py>) ("candidates" variable nil (reparse-symbol function_parameters) #<overlay from 27220 to 27230 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 27188 to 27687 in readability.py>) ("get_link_density" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 27713 to 27717 in readability.py>) ("elem" variable nil (reparse-symbol function_parameters) #<overlay from 27719 to 27723 in readability.py>) ("remove_punctuations" variable nil (reparse-symbol function_parameters) #<overlay from 27725 to 27744 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 27692 to 28118 in readability.py>) ("_get_block_tag_count" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 28148 to 28152 in readability.py>) ("elem" variable nil (reparse-symbol function_parameters) #<overlay from 28154 to 28158 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 28123 to 28464 in readability.py>) ("property" code nil (reparse-symbol indented_block_body) #<overlay from 28470 to 28478 in readability.py>) ("main_block" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 28498 to 28502 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 28483 to 29986 in readability.py>) ("_allow_p_tag" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 30008 to 30012 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 29991 to 30153 in readability.py>) ("get_bbs_blocks_candidate" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 30187 to 30191 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 30158 to 33357 in readability.py>) ("property" code nil (reparse-symbol indented_block_body) #<overlay from 33363 to 33371 in readability.py>) ("bbs_blocks" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 33391 to 33395 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 33376 to 34887 in readability.py>) ("detect_page_type" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 34913 to 34917 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 34892 to 36523 in readability.py>) ("score_paragraphs" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 36549 to 36553 in readability.py>) ("html" variable nil (reparse-symbol function_parameters) #<overlay from 36555 to 36559 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 36528 to 38808 in readability.py>) ("class_weight" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 38830 to 38834 in readability.py>) ("e" variable nil (reparse-symbol function_parameters) #<overlay from 38836 to 38837 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 38813 to 39302 in readability.py>) ("score_node" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 39322 to 39326 in readability.py>) ("elem" variable nil (reparse-symbol function_parameters) #<overlay from 39328 to 39332 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 39307 to 39854 in readability.py>) ("debug" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 39869 to 39873 in readability.py>) ("a" variable nil (reparse-symbol function_parameters) #<overlay from 39875 to 39877 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 39859 to 39951 in readability.py>) ("remove_unlikely_candidates" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 39987 to 39991 in readability.py>) ("html" variable nil (reparse-symbol function_parameters) #<overlay from 39993 to 39997 in readability.py>) ("script" variable nil (reparse-symbol function_parameters) #<overlay from 39999 to 40005 in readability.py>) ("display" variable nil (reparse-symbol function_parameters) #<overlay from 40012 to 40019 in readability.py>) ("candidate" variable nil (reparse-symbol function_parameters) #<overlay from 40026 to 40035 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 39956 to 41271 in readability.py>) ("transform_misused_divs_into_paragraphs" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 41319 to 41323 in readability.py>) ("html" variable nil (reparse-symbol function_parameters) #<overlay from 41325 to 41329 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 41276 to 42882 in readability.py>) ("tags" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 42896 to 42900 in readability.py>) ("node" variable nil (reparse-symbol function_parameters) #<overlay from 42902 to 42906 in readability.py>) ("tag_names" variable nil (reparse-symbol function_parameters) #<overlay from 42908 to 42918 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 42887 to 43035 in readability.py>) ("reverse_tags" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 43057 to 43061 in readability.py>) ("node" variable nil (reparse-symbol function_parameters) #<overlay from 43063 to 43067 in readability.py>) ("tag_names" variable nil (reparse-symbol function_parameters) #<overlay from 43069 to 43079 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 43040 to 43206 in readability.py>) ("sanitize" function (:arguments (("self" variable nil (reparse-symbol function_parameters) #<overlay from 43224 to 43228 in readability.py>) ("node" variable nil (reparse-symbol function_parameters) #<overlay from 43230 to 43234 in readability.py>) ("candidates" variable nil (reparse-symbol function_parameters) #<overlay from 43236 to 43246 in readability.py>))) (reparse-symbol indented_block_body) #<overlay from 43211 to 49798 in readability.py>))
+                :type "class")
+                nil [5784 49798])
+            ("HashableElement" type
+               (:members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [49927 49931])
+                        ("node" variable nil (reparse-symbol function_parameters) [49933 49937]))                      ) (reparse-symbol indented_block_body) [49914 49991])
+                    ("_get_path" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [50010 50014]))                      ) (reparse-symbol indented_block_body) [49996 50375])
+                    ("path" variable nil (reparse-symbol indented_block_body) [50379 50405])
+                    ("__hash__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [50424 50428]))                      ) (reparse-symbol indented_block_body) [50411 50462])
+                    ("__eq__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [50478 50482])
+                        ("other" variable nil (reparse-symbol function_parameters) [50484 50489]))                      ) (reparse-symbol indented_block_body) [50467 50531])
+                    ("__getattr__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [50552 50556])
+                        ("tag" variable nil (reparse-symbol function_parameters) [50558 50561]))                      ) (reparse-symbol indented_block_body) [50536 50603]))                  
+                :type "class")
+                nil [49885 50603])
+            ("get_max_interval" function (:arguments 
+              ( ("iteror" variable nil (reparse-symbol function_parameters) [50625 50631]))              ) nil [50604 50882])
+            ("main" function nil nil [50951 51717])
+            ("search" function (:arguments 
+              ( ("date_str" variable nil (reparse-symbol function_parameters) [51730 51738]))              ) nil [51719 51863])
+            ("if" code nil nil [51864 51902]))          
+    :file "readability.py"
+    :pointmax 51902
+    :fsize 52189
+    :lastmodtime '(21142 56324)
+    :unmatched-syntax '((punctuation 33362 . 33363) (RETURN 30069 . 30075) (IF 30081 . 30083) (ELSE 30142 . 30146) (punctuation 28469 . 28470) (NAME 25629 . 25637) (IF 25676 . 25678) (ELSE 25713 . 25717) (RETURN 22311 . 22317) (IF 22349 . 22351) (ELSE 22380 . 22384) (NAME 19433 . 19445) (IF 19460 . 19462) (ELSE 19499 . 19503) (NAME 17620 . 17624) (IF 17655 . 17657) (ELSE 17669 . 17673) (NAME 15495 . 15499) (IF 15535 . 15537) (ELSE 15549 . 15553) (RETURN 11563 . 11569) (IF 11589 . 11591) (ELSE 11608 . 11612) (punctuation 9660 . 9661) (INDENT_BLOCK 8180 . 8205) (NEWLINE 8179 . 8180) (COLON 8178 . 8179) (TRY 7886 . 7889) (AS 8174 . 8176))
+    )
+   (semanticdb-table "test.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("readability" include nil nil [26 58])
+            ("htmls" include nil nil [59 86])
+            ("if" code nil nil [89 371]))          
+    :file "test.py"
+    :pointmax 342
+    :fsize 370
+    :lastmodtime '(21277 14202)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nipeng!Desktop!cal_src!readability!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

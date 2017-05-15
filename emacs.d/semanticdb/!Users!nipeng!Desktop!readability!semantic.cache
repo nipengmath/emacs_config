@@ -1,0 +1,21 @@
+;; Object readability/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "readability/"
+  :tables (list 
+   (semanticdb-table "test.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("readability" include nil nil [26 58])
+            ("htmls" include nil nil [59 86])
+            ("if" code nil nil [89 371]))          
+    :file "test.py"
+    :pointmax 371
+    :fsize 370
+    :lastmodtime '(21277 14237)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nipeng!Desktop!readability!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

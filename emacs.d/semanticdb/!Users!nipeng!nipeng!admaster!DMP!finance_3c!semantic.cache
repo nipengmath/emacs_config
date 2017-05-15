@@ -1,0 +1,41 @@
+;; Object finance_3c/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "finance_3c/"
+  :tables (list 
+    (semanticdb-table "base_url.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "base_url.py"
+    :pointmax 3094
+    :fsize 10461
+    :lastmodtime '(21282 55129)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "extend_url.py"
+    :major-mode 'python-mode
+    :tags 
+        '( (""""
+金融，3c类别语料的base_url,
+扩充的url
+"""" code nil nil [26 60])
+            ("codecs" include nil nil [62 75])
+            ("json" include nil nil [76 87])
+            ("collections" include nil nil [88 123])
+            ("base_url" include nil nil [125 154])
+            ("tags" variable nil nil [156 457])
+            ("extend_urls" function (:arguments 
+              ( ("base_url" variable nil (reparse-symbol function_parameters) [476 484])
+                ("n_pages" variable nil (reparse-symbol function_parameters) [486 493]))              ) nil [460 696])
+            ("main" function nil nil [698 1062])
+            ("if" code nil nil [1064 1235]))          
+    :file "extend_url.py"
+    :pointmax 1235
+    :fsize 1496
+    :lastmodtime '(21282 55464)
+    :unmatched-syntax '((INDENT_BLOCK 1161 . 1186) (NEWLINE 1160 . 1161) (COLON 1159 . 1160) (NAME 1108 . 1112) (NAME 1113 . 1119) (AS 1155 . 1157) (INDENT_BLOCK 1032 . 1062) (NEWLINE 1031 . 1032) (COLON 1030 . 1031) (NAME 997 . 1001) (NAME 1002 . 1008) (AS 1026 . 1028) (INDENT_BLOCK 1161 . 1186) (NEWLINE 1160 . 1161) (COLON 1159 . 1160) (NAME 1108 . 1112) (NAME 1113 . 1119) (AS 1155 . 1157) (INDENT_BLOCK 1032 . 1062) (NEWLINE 1031 . 1032) (COLON 1030 . 1031) (NAME 997 . 1001) (NAME 1002 . 1008) (AS 1026 . 1028) (INDENT_BLOCK 1161 . 1186) (NEWLINE 1160 . 1161) (COLON 1159 . 1160) (NAME 1108 . 1112) (NAME 1113 . 1119) (AS 1155 . 1157) (INDENT_BLOCK 1032 . 1062) (NEWLINE 1031 . 1032) (COLON 1030 . 1031) (NAME 997 . 1001) (NAME 1002 . 1008) (AS 1026 . 1028) (INDENT_BLOCK 1161 . 1186) (NEWLINE 1160 . 1161) (COLON 1159 . 1160) (NAME 1108 . 1112) (NAME 1113 . 1119) (AS 1155 . 1157))
+    )
+   )
+  :file "!Users!nipeng!nipeng!admaster!DMP!finance_3c!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

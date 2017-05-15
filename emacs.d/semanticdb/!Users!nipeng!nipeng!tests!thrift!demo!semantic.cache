@@ -1,0 +1,44 @@
+;; Object demo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "demo/"
+  :tables (list 
+   (semanticdb-table "client.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "client.py"
+    :pointmax 791
+    :fsize 914
+    :lastmodtime '(21273 18907)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "server.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [48 58])
+            ("sys" code nil nil [59 84])
+            ("thrift.transport" include nil nil [86 122])
+            ("thrift.transport" include nil nil [123 162])
+            ("thrift.protocol" include nil nil [163 206])
+            ("thrift.server" include nil nil [207 240])
+            ("demo.MathService" include nil nil [243 266])
+            ("MathHandler" type
+               (:superclasses ("demo.MathService.Iface")
+                :members 
+                  ( ("add" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [324 328])
+                        ("a" variable nil (reparse-symbol function_parameters) [330 331])
+                        ("b" variable nil (reparse-symbol function_parameters) [333 334]))                      ) (reparse-symbol indented_block_body) [316 358]))                  
+                :type "class")
+                nil [269 358])
+            ("if" code nil nil [359 793]))          
+    :file "server.py"
+    :pointmax 793
+    :fsize 822
+    :lastmodtime '(21273 18872)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nipeng!nipeng!tests!thrift!demo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

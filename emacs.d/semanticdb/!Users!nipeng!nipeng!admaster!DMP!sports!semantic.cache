@@ -1,0 +1,29 @@
+;; Object sports/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sports/"
+  :tables (list 
+   (semanticdb-table "sports.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("csv" include nil nil [26 36])
+            ("codecs" include nil nil [37 50])
+            ("json" include nil nil [51 62])
+            ("collections" include nil nil [63 98])
+            ("read_csv" function (:arguments 
+              ( ("fname" variable nil (reparse-symbol function_parameters) [114 119]))              ) nil [101 250])
+            ("load_json" function (:arguments 
+              ( ("fname" variable nil (reparse-symbol function_parameters) [266 271]))              ) nil [252 336])
+            ("id_term" variable nil nil [338 391])
+            ("main" function nil nil [394 711])
+            ("if" code nil nil [712 785]))          
+    :file "sports.py"
+    :pointmax 393
+    :fsize 796
+    :lastmodtime '(21277 22573)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nipeng!nipeng!admaster!DMP!sports!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

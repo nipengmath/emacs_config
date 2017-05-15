@@ -1,0 +1,174 @@
+;; Object demo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "demo/"
+  :tables (list 
+   (semanticdb-table "__init__.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("__all__" variable nil nil [1 48]))          
+    :file "__init__.py"
+    :pointmax 49
+    :fsize 49
+    :lastmodtime '(21273 14785)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "MathService-remote"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [164 174])
+            ("sya" code nil nil [175 200])
+            ("pprint" include nil nil [201 214])
+            ("urlparse" include nil nil [215 244])
+            ("thrift.transport" include nil nil [245 284])
+            ("thrift.transport" include nil nil [285 321])
+            ("thrift.transport" include nil nil [322 362])
+            ("thrift.protocol" include nil nil [363 406])
+            ("demo" include nil nil [408 436])
+            ("demo.ttypes" include nil nil [437 462])
+            ("if" code nil nil [464 717])
+            ("pp" variable nil nil [718 755])
+            ("host" variable nil nil [756 774])
+            ("port" variable nil nil [775 786])
+            ("uri" variable nil nil [787 795])
+            ("framed" variable nil nil [796 810])
+            ("http" variable nil nil [811 823])
+            ("argi" variable nil nil [824 832])
+            ("if" code nil nil [834 975])
+            ("if" code nil nil [976 1232])
+            ("if" code nil nil [1233 1319])
+            ("cmd" variable nil nil [1320 1340])
+            ("args" variable nil nil [1341 1365])
+            ("if" code nil nil [1367 1603])
+            ("protocol" variable nil nil [1603 1656])
+            ("client" variable nil nil [1657 1694])
+            ("transport" code nil nil [1695 1711])
+            ("if" code nil nil [1713 1913])
+            ("transport" code nil nil [1914 1931]))          
+    :file "MathService-remote"
+    :pointmax 1932
+    :fsize 1931
+    :lastmodtime '(21273 15776)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "MathService.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("thrift.Thrift" include nil nil [142 222])
+            ("ttypes" include nil nil [223 243])
+            ("thrift.Thrift" include nil nil [244 280])
+            ("thrift.transport" include nil nil [281 320])
+            ("thrift.protocol" include nil nil [321 375])
+            ("try" code nil nil [376 450])
+            ("Iface" type
+               (:members 
+                  ( ("add" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [475 479])
+                        ("a" variable nil (reparse-symbol function_parameters) [481 482])
+                        ("b" variable nil (reparse-symbol function_parameters) [484 485]))                      ) (reparse-symbol indented_block_body) [467 547]))                  
+                :type "class")
+                nil [452 547])
+            ("Client" type
+               (:superclasses ("Iface")
+                :members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [585 589])
+                        ("iprot" variable nil (reparse-symbol function_parameters) [591 596])
+                        ("oprot" variable nil (reparse-symbol function_parameters) [598 603]))                      ) (reparse-symbol indented_block_body) [572 721])
+                    ("add" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [732 736])
+                        ("a" variable nil (reparse-symbol function_parameters) [738 739])
+                        ("b" variable nil (reparse-symbol function_parameters) [741 742]))                      ) (reparse-symbol indented_block_body) [724 846])
+                    ("send_add" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [862 866])
+                        ("a" variable nil (reparse-symbol function_parameters) [868 869])
+                        ("b" variable nil (reparse-symbol function_parameters) [871 872]))                      ) (reparse-symbol indented_block_body) [849 1092])
+                    ("recv_add" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1108 1112]))                      ) (reparse-symbol indented_block_body) [1095 1576]))                  
+                :type "class")
+                nil [549 1576])
+            ("Processor" type
+               (:superclasses ("Iface" "TProcessor")
+                :members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1629 1633])
+                        ("handler" variable nil (reparse-symbol function_parameters) [1635 1642]))                      ) (reparse-symbol indented_block_body) [1616 1751])
+                    ("process" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1766 1770])
+                        ("iprot" variable nil (reparse-symbol function_parameters) [1772 1777])
+                        ("oprot" variable nil (reparse-symbol function_parameters) [1779 1784]))                      ) (reparse-symbol indented_block_body) [1754 2276])
+                    ("process_add" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [2295 2299])
+                        ("seqid" variable nil (reparse-symbol function_parameters) [2301 2306])
+                        ("iprot" variable nil (reparse-symbol function_parameters) [2308 2313])
+                        ("oprot" variable nil (reparse-symbol function_parameters) [2315 2320]))                      ) (reparse-symbol indented_block_body) [2279 2612]))                  
+                :type "class")
+                nil [1578 2612])
+            ("add_args" type
+               (:members 
+                  ( (""""
+  Attributes:
+   - a
+   - b
+  """" code nil (reparse-symbol indented_block_body) [2667 2704])
+                    ("thrift_spec" variable nil (reparse-symbol indented_block_body) [2708 2827])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [2844 2848])
+                        ("a" variable nil (reparse-symbol function_parameters) [2850 2851])
+                        ("b" variable nil (reparse-symbol function_parameters) [2858 2859]))                      ) (reparse-symbol indented_block_body) [2831 2898])
+                    ("read" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [2910 2914])
+                        ("iprot" variable nil (reparse-symbol function_parameters) [2916 2921]))                      ) (reparse-symbol indented_block_body) [2901 3700])
+                    ("write" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [3713 3717])
+                        ("oprot" variable nil (reparse-symbol function_parameters) [3719 3724]))                      ) (reparse-symbol indented_block_body) [3703 4317])
+                    ("validate" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [4333 4337]))                      ) (reparse-symbol indented_block_body) [4320 4351])
+                    ("__repr__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [4368 4372]))                      ) (reparse-symbol indented_block_body) [4355 4520])
+                    ("__eq__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [4534 4538])
+                        ("other" variable nil (reparse-symbol function_parameters) [4540 4545]))                      ) (reparse-symbol indented_block_body) [4523 4629])
+                    ("__ne__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [4643 4647])
+                        ("other" variable nil (reparse-symbol function_parameters) [4649 4654]))                      ) (reparse-symbol indented_block_body) [4632 4688]))                  
+                :type "class")
+                nil [2649 4688])
+            ("add_result" type
+               (:members 
+                  ( (""""
+  Attributes:
+   - success
+  """" code nil (reparse-symbol indented_block_body) [4709 4745])
+                    ("thrift_spec" variable nil (reparse-symbol indented_block_body) [4749 4817])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [4834 4838])
+                        ("success" variable nil (reparse-symbol function_parameters) [4840 4847]))                      ) (reparse-symbol indented_block_body) [4821 4883])
+                    ("read" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [4895 4899])
+                        ("iprot" variable nil (reparse-symbol function_parameters) [4901 4906]))                      ) (reparse-symbol indented_block_body) [4886 5561])
+                    ("write" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [5574 5578])
+                        ("oprot" variable nil (reparse-symbol function_parameters) [5580 5585]))                      ) (reparse-symbol indented_block_body) [5564 6067])
+                    ("validate" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [6083 6087]))                      ) (reparse-symbol indented_block_body) [6070 6101])
+                    ("__repr__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [6118 6122]))                      ) (reparse-symbol indented_block_body) [6105 6270])
+                    ("__eq__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [6284 6288])
+                        ("other" variable nil (reparse-symbol function_parameters) [6290 6295]))                      ) (reparse-symbol indented_block_body) [6273 6379])
+                    ("__ne__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [6393 6397])
+                        ("other" variable nil (reparse-symbol function_parameters) [6399 6404]))                      ) (reparse-symbol indented_block_body) [6382 6438]))                  
+                :type "class")
+                nil [4689 6438]))          
+    :file "MathService.py"
+    :pointmax 6438
+    :fsize 6437
+    :lastmodtime '(21273 14785)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nipeng!nipeng!tests!thrift!demo!gen-py!demo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

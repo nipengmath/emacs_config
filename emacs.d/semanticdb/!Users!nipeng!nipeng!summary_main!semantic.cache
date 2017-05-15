@@ -1,0 +1,20 @@
+;; Object summary_main/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "summary_main/"
+  :tables (list 
+   (semanticdb-table "setup.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("distutils.core" include nil nil [26 58])
+            ("setup" code nil nil [60 208]))          
+    :file "setup.py"
+    :pointmax 209
+    :fsize 208
+    :lastmodtime '(21178 22175)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nipeng!nipeng!summary_main!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

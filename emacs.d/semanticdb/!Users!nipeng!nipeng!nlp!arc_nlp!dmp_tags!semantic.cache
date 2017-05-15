@@ -1,0 +1,218 @@
+;; Object dmp_tags/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dmp_tags/"
+  :tables (list 
+   (semanticdb-table "train.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("" "" 训练语料，得到训练模型 "" "" code nil nil [26 45])
+            ("__future__" include nil nil [47 78])
+            ("collections" include nil nil [79 114])
+            ("codecs" include nil nil [115 128])
+            ("gensim" include nil nil [129 142])
+            ("json" include nil nil [143 154])
+            ("cal_tf_idf" function (:arguments 
+              ( ("corpus_dict" variable nil (reparse-symbol function_parameters) [172 183])
+                ("n_features" variable nil (reparse-symbol function_parameters) [185 195]))              ) nil [157 915])
+            ("norm_tag_term" function (:arguments 
+              ( ("tag_term" variable nil (reparse-symbol function_parameters) [935 943]))              ) nil [917 1261])
+            ("save_to_json" function (:arguments 
+              ( ("rst" variable nil (reparse-symbol function_parameters) [1280 1283])
+                ("json_file" variable nil (reparse-symbol function_parameters) [1285 1294]))              ) nil [1263 1405])
+            ("train_model" function (:arguments 
+              ( ("corpus_dict" variable nil (reparse-symbol function_parameters) [1423 1434])
+                ("n_features" variable nil (reparse-symbol function_parameters) [1436 1446])
+                ("json_file" variable nil (reparse-symbol function_parameters) [1448 1457]))              ) nil [1407 1651]))          
+    :file "train.py"
+    :pointmax 1651
+    :fsize 1956
+    :lastmodtime '(21277 12427)
+    :unmatched-syntax '((INDENT_BLOCK 1379 . 1405) (NEWLINE 1378 . 1379) (COLON 1377 . 1378) (NAME 1340 . 1344) (NAME 1345 . 1351) (AS 1373 . 1375))
+    )
+   (semanticdb-table "train_tag_decile.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("" "" 计算panel库中10wcookie，关于每个标签的日平均相似度，保存为txt文件。 分析文件，得到关于tag的十分位数 (\, 保存为json文件。) "" "" code nil nil [26 106])
+            ("pymongo" include nil nil [109 123])
+            ("collections" include nil nil [124 159])
+            ("cPickle" include nil nil [160 174])
+            ("codecs" include nil nil [175 188])
+            ("json" include nil nil [189 200])
+            ("datetime" include nil nil [201 216])
+            ("numpy" include nil nil [217 235])
+            ("config" include nil nil [237 266])
+            ("config" include nil nil [267 296])
+            ("config" include nil nil [297 328])
+            ("config" include nil nil [329 361])
+            ("config" include nil nil [362 394])
+            ("config" include nil nil [395 428])
+            ("config" include nil nil [429 466])
+            ("utils" include nil nil [468 501])
+            ("utils" include nil nil [502 532])
+            ("load" function (:arguments 
+              ( ("fname" variable nil (reparse-symbol function_parameters) [544 549]))              ) nil [535 677])
+            ("predict_cookie_day" function (:arguments 
+              ( ("cookie" variable nil (reparse-symbol function_parameters) [702 708])
+                ("cookie_url_col" variable nil (reparse-symbol function_parameters) [710 724])
+                ("url_info_col" variable nil (reparse-symbol function_parameters) [749 761])
+                ("cate_term_dict" variable nil (reparse-symbol function_parameters) [763 777]))              ) nil [679 1291])
+            ("save_cookie_day" function (:arguments 
+              ( ("cookie_list" variable nil (reparse-symbol function_parameters) [1313 1324])
+                ("cookie_url_col" variable nil (reparse-symbol function_parameters) [1326 1340])
+                ("url_info_col" variable nil (reparse-symbol function_parameters) [1362 1374])
+                ("cate_term_dict" variable nil (reparse-symbol function_parameters) [1376 1390])
+                ("rst_fname" variable nil (reparse-symbol function_parameters) [1412 1421]))              ) nil [1293 2054])
+            ("save_cookie_day_main" function (:arguments 
+              ( ("cookie_list" variable nil (reparse-symbol function_parameters) [2081 2092])
+                ("cookie_url_col" variable nil (reparse-symbol function_parameters) [2119 2133])
+                ("url_info_col" variable nil (reparse-symbol function_parameters) [2160 2172])
+                ("per_day_fname" variable nil (reparse-symbol function_parameters) [2199 2212]))              ) nil [2056 2715])
+            ("get_decile" function (:arguments 
+              ( ("lst" variable nil (reparse-symbol function_parameters) [2733 2736])
+                ("k" variable nil (reparse-symbol function_parameters) [2738 2739]))              ) nil [2718 3047])
+            ("get_cate_value_per_day" function (:arguments 
+              ( ("fname" variable nil (reparse-symbol function_parameters) [3076 3081]))              ) nil [3049 3472])
+            ("save_cate_decile_main" function (:arguments 
+              ( ("decile_fname" variable nil (reparse-symbol function_parameters) [3500 3512])
+                ("per_day_fname" variable nil (reparse-symbol function_parameters) [3514 3527])
+                ("k" variable nil (reparse-symbol function_parameters) [3529 3530]))              ) nil [3474 3819])
+            ("save_decile" function nil nil [3821 4502])
+            ("if" code nil nil [4504 4560]))          
+    :file "train_tag_decile.py"
+    :pointmax 4560
+    :fsize 4939
+    :lastmodtime '(21268 549)
+    :unmatched-syntax '((INDENT_BLOCK 3793 . 3819) (NEWLINE 3792 . 3793) (COLON 3791 . 3792) (NAME 3751 . 3755) (NAME 3756 . 3762) (AS 3787 . 3789) (INDENT_BLOCK 1535 . 2054) (NEWLINE 1534 . 1535) (COLON 1533 . 1534) (NAME 1488 . 1492) (NAME 1493 . 1499) (AS 1529 . 1531) (INDENT_BLOCK 586 . 677) (NEWLINE 585 . 586) (COLON 584 . 585) (NAME 556 . 560) (NAME 561 . 567) (AS 580 . 582))
+    )
+   (semanticdb-table "predict.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("" "" 预测模型 "" "" code nil nil [26 38])
+            ("json" include nil nil [40 51])
+            ("collections" include nil nil [52 87])
+            ("load_weight_dict" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [111 119]))              ) nil [90 189])
+            ("predict" function (:arguments 
+              ( ("tf_dict" variable nil (reparse-symbol function_parameters) [203 210])
+                ("dist" variable nil (reparse-symbol function_parameters) [212 216]))              ) nil [191 576]))          
+    :file "predict.py"
+    :pointmax 585
+    :fsize 617
+    :lastmodtime '(21278 44100)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "utils.py"
+    :major-mode 'python-mode
+    :tags 
+        '( (""""
+汽车类相关标签
+"""" code nil nil [26 41])
+            ("re" include nil nil [43 52])
+            ("datetime" include nil nil [53 68])
+            ("urllib" include nil nil [69 82])
+            ("collections" include nil nil [83 118])
+            ("base64" include nil nil [119 132])
+            ("json" include nil nil [133 144])
+            ("try" code nil nil [146 329])
+            ("jieba" include nil nil [330 361])
+            ("config" include nil nil [362 399])
+            ("config" include nil nil [400 432])
+            ("config" include nil nil [433 462])
+            ("config" include nil nil [463 492])
+            ("config" include nil nil [493 527])
+            ("config" include nil nil [528 560])
+            ("config" include nil nil [561 594])
+            ("config" include nil nil [595 631])
+            ("config" include nil nil [632 663])
+            ("cal_weight" function (:arguments 
+              ( ("dct1" variable nil (reparse-symbol function_parameters) [681 685])
+                ("dct2" variable nil (reparse-symbol function_parameters) [687 691]))              ) nil [666 836])
+            ("predict" function (:arguments 
+              ( ("tf_dict" variable nil (reparse-symbol function_parameters) [850 857])
+                ("cate_term_dict" variable nil (reparse-symbol function_parameters) [859 873]))              ) nil [838 1192])
+            ("seg_text" function (:arguments 
+              ( ("text" variable nil (reparse-symbol function_parameters) [1207 1211]))              ) nil [1194 1413])
+            ("predict_text" function (:arguments 
+              ( ("text" variable nil (reparse-symbol function_parameters) [1432 1436])
+                ("cate_term_dict" variable nil (reparse-symbol function_parameters) [1438 1452]))              ) nil [1415 1625])
+            ("predict_cookie" function (:arguments 
+              ( ("cookie" variable nil (reparse-symbol function_parameters) [1646 1652])
+                ("cookie_url_col" variable nil (reparse-symbol function_parameters) [1654 1668])
+                ("url_info_col" variable nil (reparse-symbol function_parameters) [1689 1701])
+                ("cate_term_dict" variable nil (reparse-symbol function_parameters) [1703 1717]))              ) nil [1627 1991])
+            ("predict_cookie_day" function (:arguments 
+              ( ("cookie" variable nil (reparse-symbol function_parameters) [2016 2022])
+                ("cookie_url_col" variable nil (reparse-symbol function_parameters) [2024 2038])
+                ("url_info_col" variable nil (reparse-symbol function_parameters) [2063 2075])
+                ("cate_term_dict" variable nil (reparse-symbol function_parameters) [2077 2091]))              ) nil [1993 2601])
+            ("get_cookie_text" function (:arguments 
+              ( ("cookie" variable nil (reparse-symbol function_parameters) [2623 2629])
+                ("cookie_url_col" variable nil (reparse-symbol function_parameters) [2631 2645])
+                ("url_info_col" variable nil (reparse-symbol function_parameters) [2647 2659]))              ) nil [2603 3580])
+            ("get_hbase_data" function (:arguments 
+              ( ("url" variable nil (reparse-symbol function_parameters) [3601 3604])
+                ("base_url" variable nil (reparse-symbol function_parameters) [3606 3614]))              ) nil [3582 3819])
+            ("get_mysql_data" function (:arguments 
+              ( ("i" variable nil (reparse-symbol function_parameters) [3840 3841])
+                ("query" variable nil (reparse-symbol function_parameters) [3843 3848]))              ) nil [3821 4887])
+            ("get_tag_dict" function (:arguments 
+              ( ("i" variable nil (reparse-symbol function_parameters) [4905 4906]))              ) nil [4888 5312])
+            ("get_corpus" function (:arguments 
+              ( ("start" variable nil (reparse-symbol function_parameters) [5328 5333])
+                ("end" variable nil (reparse-symbol function_parameters) [5335 5338]))              ) nil [5313 5886])
+            ("if" code nil nil [5887 5938]))          
+    :file "utils.py"
+    :pointmax 5938
+    :fsize 6475
+    :lastmodtime '(21277 12427)
+    :unmatched-syntax '((INDENT_BLOCK 4851 . 4871) (NEWLINE 4850 . 4851) (COLON 4849 . 4850) (FINALLY 4842 . 4849) (INDENT_BLOCK 4818 . 4838) (NEWLINE 4817 . 4818) (COLON 4816 . 4817) (AS 4812 . 4814) (EXCEPT 4795 . 4801) (INDENT_BLOCK 4728 . 4791) (NEWLINE 4727 . 4728) (COLON 4726 . 4727) (AS 4722 . 4724) (INDENT_BLOCK 4455 . 4523) (NEWLINE 4454 . 4455) (COLON 4453 . 4454) (TRY 3988 . 3991) (AS 4449 . 4451))
+    )
+   (semanticdb-table "test_tags.py"
+    :major-mode 'python-mode
+    :tags 
+        '( (""""
+测试训练方法
+"""" code nil nil [26 40])
+            ("__future__" include nil nil [42 73])
+            ("unittest" include nil nil [74 89])
+            ("train" include nil nil [91 119])
+            ("train" include nil nil [120 149])
+            ("train" include nil nil [150 181])
+            ("predict" include nil nil [182 209])
+            ("predict" include nil nil [210 246])
+            ("utils" include nil nil [247 279])
+            ("utils" include nil nil [280 312])
+            ("utils" include nil nil [313 343])
+            ("utils" include nil nil [344 372])
+            ("test_tags" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("setUp" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [425 429]))                      ) (reparse-symbol indented_block_body) [415 643])
+                    ("test_cal_tf_idf" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [669 673]))                      ) (reparse-symbol indented_block_body) [649 834])
+                    ("test_norm_tag_term" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [862 866]))                      ) (reparse-symbol indented_block_body) [839 1040])
+                    ("test_predict" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1062 1066]))                      ) (reparse-symbol indented_block_body) [1045 1217])
+                    ("test_get_hbase_data" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1246 1250]))                      ) (reparse-symbol indented_block_body) [1222 1367])
+                    ("test_get_mysql_data" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1396 1400]))                      ) (reparse-symbol indented_block_body) [1372 1513])
+                    ("test_get_tag_dict" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1540 1544]))                      ) (reparse-symbol indented_block_body) [1518 1633])
+                    ("test_get_corpus" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1658 1662]))                      ) (reparse-symbol indented_block_body) [1638 1915]))                  
+                :type "class")
+                nil [374 1915]))          
+    :file "test_tags.py"
+    :pointmax 1915
+    :fsize 1932
+    :lastmodtime '(21278 46983)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nipeng!nipeng!nlp!arc_nlp!dmp_tags!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

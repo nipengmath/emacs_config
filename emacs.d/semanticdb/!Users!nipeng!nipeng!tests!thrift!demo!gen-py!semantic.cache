@@ -1,0 +1,36 @@
+;; Object gen-py/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gen-py/"
+  :tables (list 
+   (semanticdb-table "server.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [25 35])
+            ("sys" code nil nil [36 64])
+            ("print" code nil nil [65 65])
+            ("thrift.transport" include nil nil [66 102])
+            ("thrift.transport" include nil nil [103 142])
+            ("thrift.protocol" include nil nil [143 186])
+            ("thrift.server" include nil nil [187 220])
+            ("demo.MathService" include nil nil [254 277])
+            ("MathHandler" type
+               (:superclasses ("demo.MathService.Iface")
+                :members 
+                  ( ("add" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [335 339])
+                        ("a" variable nil (reparse-symbol function_parameters) [341 342])
+                        ("b" variable nil (reparse-symbol function_parameters) [344 345]))                      ) (reparse-symbol indented_block_body) [327 369]))                  
+                :type "class")
+                nil [280 369])
+            ("if" code nil nil [370 766]))          
+    :file "server.py"
+    :pointmax 782
+    :fsize 765
+    :lastmodtime '(21273 14461)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!nipeng!nipeng!tests!thrift!demo!gen-py!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )
